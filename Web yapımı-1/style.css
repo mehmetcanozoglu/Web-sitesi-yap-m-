@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500&family=Roboto:ital,wght@0,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500&family=Roboto:ital,wght@0,300;1,400;1,700&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+section,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.header {
+    background-image: url(en-guzel-kahve-fotograflari-08.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.header-menu img{
+  width: 20px;
+  font-weight: 600;
+}
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo {
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid black;
+    border-radius: 35px;
+
+}
+
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 27px;
+}
+
+li:first-child {
+    margin-right: 70px;
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-text h1 {
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: "Herr von muellerhoff";
+    color: black;
+}
+
+.first-letter {
+    font-size: 10rem;
+    font-family: "Herr von muellerhoff";
+    color: black;
+}
+
+h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.btn-coffe {
+    display: block;
+    background-color: #745b37;
+    color: #ffff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.btn-coffe::after {
+    content: 'BUY';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #5b2a02;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s linear;
+}
+
+.btn-coffe:hover::after {
+    top: 0;
+}
+
+/*About*/
+
+.about {
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 60px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+}
+
+.about-title h2::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.about-text {
+    width: 40%;
+}
+
+.about-text h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: #5b2a02;
+    font-family: "Herr von muellerhoff";
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+}
+
+.about-text #asterik {
+    color: #5b2a02;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    text-align: center;
+    font-size: 25px;
+    color: #2c2727;
+}
+
+
+
+/*portfolyo*/
+
+.portfolyo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolyo-item {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolyo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .45s;
+   
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #5b2a02d2;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: white;
+    font-size: 3rem;
+    padding: 5px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: .45s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.portfolyo-item:hover .overlay {
+    top: 0;
+
+}
+.portfolyo-item:hover img{
+    transform: scale(1.1);
+}
+
+/*content*/
+
+.contant{
+    padding: 10px 0;
+}
+
+.contant h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.contant h2::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.contant .phone{
+    background-image: url(phone.png);
+    width:  40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.contant .letter{
+    background-image: url(letter.png);
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.contant .konum{
+    background-image: url(konum.png);
+    width: 35px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+.contact-item p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+.footer-social .icon{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+}
+
+
+/*Footer*/
+
+.footer h2{
+    width: 100%;
+    text-align: center; 
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding: 20px 0;
+}
+
+.footer h2::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.footer{
+    background-color: black;
+}
+.footer .footer-copy{
+    color: white;
+    text-align: center;
+    flex-basis: 50%;
+    line-height: 2;
+    font-size: 13px;
+    
+}
+
+#menü-icon{
+ display: none;
+ margin-left: 20px;
+}
+
+/*ABOUT*/
+
+@media screen and (max-width: 990px){ 
+  .about-image{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about-text{
+    width: 100%;
+  }
+
+  .portfolyo .portfolyo-item{
+    flex-basis: 50%;
+  }
+
+}
+
+
+/*portfolyo*/
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .header-menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #311702c4;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .45s linear;
+       
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu ul li a{
+        color: white;
+    }
+    #menü-icon{
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    .contact-content{
+     flex-direction: column;
+    }
+    .contact-item{
+        margin-top: 40px;
+    }
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .portfolyo .portfolyo-item{
+        flex-basis: 100%;
+    }
+
+    
+}
